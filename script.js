@@ -67,7 +67,7 @@ completed.addEventListener("click", () => {
 });
 
 cleared.addEventListener("click", () => {
-    const completedTasks = listContainer.querySelectorAll(".cheaked");
+    const completedTasks = listContainer.querySelectorAll("li");
     completedTasks.forEach((completedTask) => {
         completedTask.remove();
         saveData();
