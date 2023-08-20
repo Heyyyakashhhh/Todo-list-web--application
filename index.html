@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="container">
+        <div id="todo-app">
+            <h2>Todo List <img src="images/icon.png" alt=""></h2>
+            <div id="complete-clear">
+                <p id="completed"><i class="fa-solid fa-check-double" style="color: #8a8e93;"></i> complete all tasks</p>
+                <p id="cleared">clear completed</p>
+            </div>
+            <hr style="margin-bottom: 20px;">
+            <div class="row">
+                <input type="text"  id="todo-text" placeholder="Add Your Task Herer" autocomplete="on">
+                <button onclick="addTask()">Add </button>
+
+            </div>
+            <ul id="list-container">
+                <!-- <li class="cheaked">Task1</li>
+                <li>Task2</li>
+                <li>Task3</li> -->
+            </ul>
+            <hr>
+            <p id="leftTask"></p>
+        </div>
+
+       
+       
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

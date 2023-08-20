@@ -1,0 +1,178 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Roboto:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' , sans-serif;
+
+}
+
+
+#container{
+    width:100%;
+    min-height: 100vh;
+    background: rgb(78,65,183);
+    background: radial-gradient(circle, rgba(78,65,183,1) 0%, rgba(148,199,233,0.9909014875481442) 100%);
+    padding: 10px;
+
+}
+
+#complete-clear{
+    display: flex;
+    justify-content: space-between;
+}
+
+#completed{
+    cursor: pointer;
+}
+#completed:hover{
+    color: #555;
+}
+#cleared{
+    cursor: pointer;
+}
+#cleared:hover{
+    color: #555;
+}
+#todo-app{
+    background: #fff;
+    width: 100%;
+    max-width: 540px;
+    align-items: center;
+    margin: 100px auto 50px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+
+#todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#todo-app h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    margin-bottom: 30px;
+    background: #edeef0;
+    border-radius: 30px;
+}
+
+input {
+    flex: 1;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 20px;
+    font-weight: 14px;
+    font-size: 1.1rem;
+
+}
+
+
+button{
+    padding: 20px 50px;
+    border-radius: 30px;
+    outline: none;
+    background: #ff5945;
+    color:#fff;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    font-weight:100;
+}
+
+button:hover{
+    
+    background: #d95344;
+}
+
+
+
+
+ul li{
+    list-style: none;
+    padding: 12px 8px 12px 45px;
+    font-size: 17px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+}
+
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-image: url(images/unchecked.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    top: 7px;
+    left:5px;
+
+}
+
+ul li.cheaked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.cheaked::before{
+    background-image: url(images/checked.png);
+}
+
+
+.fa-trash-can{
+    position: absolute;
+    right: 10px;
+    font-size: 1.4rem;
+    border-radius: 50%;
+}
+
+.fa-trash-can:hover{
+    background: #edeef0;
+}
+
+hr{
+    margin-top: 30px;
+}
+.leftTask{
+    position: absolute;
+    bottom: 0;
+   
+    
+}
+
+
+@media (max-width: 480px) {
+    input{
+        width: 100%
+    }
+    #container{
+        height: auto;
+    }
+
+}
+
+@media (max-width: 1030) {
+   #container{
+    display: flex;
+    justify-content: center;
+    align-items: center
+    ;
+   }
+}
